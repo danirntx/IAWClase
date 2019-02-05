@@ -10,21 +10,22 @@
     Vista detalle Juego
     <div class="row">
         <div class="col-sm-4">
-            <img src="{{$id_game->image}}" style="height:200px"/>
+            <img src="{{$id->image}}" style="height:200px"/>
         </div>
         <div class="col-sm-8">
-            <h1>{{$id_game->title}}</h1>
-            <h4>Precio: {{$id_game->price}}</h4>
-            <h4>Categoria: {{$id_game->category}}</h4>
-            <p><strong>Descripción:</strong> {{$id_game->description}}</p>
-            <!--@if($id_game->stock==true)
+
+            <h1>{{$id->name}}</h1>
+            <h4>Precio: {{$id->price}}</h4>
+            <h4>Categoria: {{$id->category}}</h4>
+            <p><strong>Descripción:</strong> {{$id->description}}</p>
+            <!--@if($id->stock==true)
                 <p><strong>Estado:</strong> No hay stock</p>
                 <a class="btn btn-danger" href="#">Avisar</a>
             @else
                 <p><strong>Estado:</strong> Juego disponible</p>
                 <a class="btn btn-success" href="#">Comprar Pelicula</a>
             @endif-->
-            <a class="btn btn-warning" href="{{ url('/catalog/edit/' . $id_game->id_game ) }}">Editar Juego</a>
+            <a class="btn btn-warning" href="{{ url('/catalog/edit/' . $id->id ) }}">Editar Juego</a>
             <a class="btn btn-light" href="{{ url('/catalog' ) }}">Volver al listado</a>
         </div>
     </div>

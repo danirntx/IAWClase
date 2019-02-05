@@ -8,13 +8,13 @@ class CatalogController extends Controller
         return view('catalog.index')->with('arrayJuegos',Games::all());
     }
     public function getShow($id) {
-        return view('catalog.show', array('id_game'=>Games::findOrFail($id)));
+        return view('catalog.show', array('id'=>Games::findOrFail($id)));
     }
     public function getCreate() {
         return view('catalog.create');
     }
     public function getEdit($id) {
-        return view('catalog.edit', array('id_game'=>Games::findOrFail($id)));
+        return view('catalog.edit', array('id'=>Games::findOrFail($id)));
     }
     public function postCreate(Request $request)
     {

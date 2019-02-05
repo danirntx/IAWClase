@@ -13,7 +13,7 @@
     <div class="row">
         @foreach( $arrayJuegos as $key => $juegos )
             <div class="col-xs-6 col-sm-4 col-md-3 text-center">
-                <a href="{{ url('/catalog/show/' . $juegos->id_game ) }}">
+                <a href="{{ url('/catalog/show/' . $juegos->id ) }}">
                     <img src="{{$juegos->image}}" style="height:200px"/>
                     <h4 style="min-height:45px;margin:5px 0 10px 0">
                         {{$juegos->name}}

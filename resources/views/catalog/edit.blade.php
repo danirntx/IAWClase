@@ -7,12 +7,12 @@
 <body>
 @extends('layouts.master')
 @section('content')
-    Modificar pelicula
+    Modificar juego
     <div class="row" style="margin-top:40px">
         <div class="offset-md-3 col-md-6">
             <div class="card">
                 <div class="card-header text-center">
-                    Modificar película
+                    Modificar juego
                 </div>
                 <div class="card-body" style="padding:30px">
 
@@ -22,36 +22,66 @@
                         {{ method_field('PUT') }}
                         {{ csrf_field() }}
                         <div class="form-group">
-                            <label for="title">Título</label>
-                            <input type="text" name="title" id="title" class="form-control" value="{{$id->title}}">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="name" class="form-control" value="{{$id->name}}">
                         </div>
 
                         <div class="form-group">
-                            {{-- TODO: Completa el input para el año --}}
-                            <label for="year">Año</label>
-                            <input type="text" name="year" id="year" class="form-control" value="{{$id->year}}">
+                            {{-- TODO: Completa el input para el precio --}}
+                            <label for="price">Precio</label>
+                            <input type="text" name="price" id="price" class="form-control" value="{{$id->price}}">
                         </div>
 
                         <div class="form-group">
-                            {{-- TODO: Completa el input para el director --}}
-                            <label for="director">Director</label>
-                            <input type="text" name="Director" id="Director" class="form-control" value="{{$id->director}}">
+                            {{-- TODO: Completa el input para la categoría --}}
+                            <label for="category">Categoría</label>
+                            <input type="text" name="category" id="category" class="form-control" value="{{$id->category}}">
                         </div>
 
                         <div class="form-group">
-                            {{-- TODO: Completa el input para el poster --}}
-                            <label for="poster">Poster</label>
-                            <input type="text" name="poster" id="poster" class="form-control" value="{{$id->poster}}">
+                            {{-- TODO: Completa el input para la imagen --}}
+                            <label for="image">Imagen</label>
+                            <input type="text" name="image" id="image" class="form-control" value="{{$id->image}}">
                         </div>
 
                         <div class="form-group">
-                            <label for="synopsis">Resumen</label>
-                            <textarea name="synopsis" id="synopsis" class="form-control" rows="3">{{$id->synopsis}}</textarea>
+                            {{-- TODO: Completa el input para el video --}}
+                            <label for="video">Video</label>
+                            <input type="text" name="video" id="video" class="form-control" value="{{$id->video}}">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Descripción</label>
+                            <textarea name="description" id="description" class="form-control" rows="3">{{$id->description}}</textarea>
+                        </div>
+
+                        <div class="form-group">
+                            {{-- TODO: Completa el input para el launch --}}
+                            <label for="launch">Fecha de lanzamiento</label>
+                            <input type="text" name="launch" id="launch" class="form-control" value="{{$id->launch}}">
+                        </div>
+
+                        <div class="form-group">
+                            {{-- TODO: Completa el input para el video --}}
+                            <label for="creator">Compañia</label>
+                            <input type="text" name="creator" id="creator" class="form-control" value="{{$id->creator}}">
+                        </div>
+
+                        <div class="form-group">
+                            {{-- TODO: Completa el input para el video --}}
+                            <label for="editor">Editora</label>
+                            <input type="text" name="editor" id="editor" class="form-control" value="{{$id->editor}}">
+                        </div>
+
+                        <div class="form-group">
+                            {{-- TODO: Completa el input para el video --}}
+                            <label for="key">Clave</label>
+                            <input type="text" name="key" id="key" class="form-control" value="{{$id->key}}">
                         </div>
 
                         <div class="form-group text-center">
-                            <button type="submit" class="btn btn-primary" style="padding:8px 100px;margin-top:25px;">
-                                Modificar película
+                            <button type="submit" class="btn btn-primary" style="padding:8px 60px;margin-top:25px;">
+                                Modificar juego
                             </button>
                         </div>
 
