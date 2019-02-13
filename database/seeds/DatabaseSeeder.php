@@ -60,10 +60,10 @@ private $arraySocios = array(
 				'name' => 'dani',
 				'subname' => 'dani', 
 				'email' => 'dani@gmail.com', 
-				'password' => 'admin',
-				'address' => 'C/San gato 3', 
+				'password' => 'dani',
+				'address' => 'C/San dani 3', 
 				'admin' => false, 
-				'user' => 'gato'
+				'user' => 'dani'
 				
 			),
 			array(

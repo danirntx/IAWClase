@@ -16,8 +16,8 @@ class Gamess extends Migration
             $table->string('name',45);
             $table->decimal('price',6,2);
             $table->string('category',45);
-            $table->string('image',100);
-        $table->string('video');
+            $table->text('image');
+        $table->text('video');
             $table->text('description');
             $table->date('launch');
             $table->string('creator');

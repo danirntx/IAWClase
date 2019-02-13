@@ -23,6 +23,13 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/catalog/edit/{id}', 'CatalogController@getEdit');
     Route::post('/catalog/create', 'CatalogController@postCreate');
     Route::put('/catalog/edit/{id}', 'CatalogController@putEdit');
+
+    Route::get('/user', 'UserController@getIndex');
+    Route::get('/user/show/{id}', 'UserController@getShow');
+    Route::get('/user/create', 'UserController@getCreate');
+    Route::get('/user/edit/{id}', 'UserController@getEdit');
+    Route::post('/user/create', 'UserController@postCreate');
+    Route::put('/user/edit/{id}', 'UserController@putEdit');
 });
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');

@@ -25,6 +25,9 @@ class CatalogController extends Controller
         $Games->image = $request->input('image');
         $Games->video = $request->input('video');
         $Games->description = $request->input('description');
+        $Games->launch = $request->input('launch');
+        $Games->creator = $request->input('creator');
+        $Games->editor = $request->input('editor');
         $Games->key = $request->input('key');
         $Games->save();
         return redirect()->action('CatalogController@getIndex');
@@ -37,6 +40,9 @@ class CatalogController extends Controller
         $Games->image = $request->image;
         $Games->video = $request->video;
         $Games->description = $request->description;
+        $Games->launch = $request->launch;
+        $Games->creator = $request->creator;
+        $Games->editor = $request->editor;
         $Games->key = $request->key;
         $Games->save();
         return redirect('catalog/show/'.$id);

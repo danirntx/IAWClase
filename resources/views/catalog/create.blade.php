@@ -11,7 +11,7 @@
         <div class="offset-md-3 col-md-6">
             <div class="card">
                 <div class="card-header text-center">
-                    Añadir película
+                    Añadir juego
                 </div>
                 <div class="card-body" style="padding:30px">
                     {{-- TODO: Abrir el formulario e indicar el método POST --}}
@@ -19,28 +19,62 @@
                     {{-- TODO: Protección contra CSRF --}}
                         {{ csrf_field() }}
                     <div class="form-group">
-                        <label for="title">Título</label>
-                        <input type="text" name="title" id="title" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        {{-- TODO: Completa el input para el año --}}
-                        <label for="year">Año</label>
-                        <input type="text" name="year" id="year" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        {{-- TODO: Completa el input para el director --}}
-                        <label for="director">Director</label>
-                        <input type="text" name="director" id="Director" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        {{-- TODO: Completa el input para el poster --}}
-                        <label for="poster">Poster</label>
-                        <input type="text" name="poster" id="poster" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="synopsis">Resumen</label>
-                        <textarea name="synopsis" id="synopsis" class="form-control" rows="3"></textarea>
-                    </div>
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="name" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            {{-- TODO: Completa el input para el precio --}}
+                            <label for="price">Precio</label>
+                            <input type="text" name="price" id="price" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            {{-- TODO: Completa el input para la categoría --}}
+                            <label for="category">Categoría</label>
+                            <input type="text" name="category" id="category" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            {{-- TODO: Completa el input para la imagen --}}
+                            <label for="image">Imagen</label>
+                            <input type="text" name="image" id="image" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            {{-- TODO: Completa el input para el video --}}
+                            <label for="video">Video</label>
+                            <input type="text" name="video" id="video" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Descripción</label>
+                            <textarea name="description" id="description" class="form-control" rows="3"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            {{-- TODO: Completa el input para el launch --}}
+                            <label for="launch">Fecha de lanzamiento</label>
+                            <input type="text" name="launch" id="launch" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            {{-- TODO: Completa el input para el video --}}
+                            <label for="creator">Compañia</label>
+                            <input type="text" name="creator" id="creator" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            {{-- TODO: Completa el input para el video --}}
+                            <label for="editor">Editora</label>
+                            <input type="text" name="editor" id="editor" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            {{-- TODO: Completa el input para el video --}}
+                            <label for="key">Clave</label>
+                            <input type="text" name="key" id="key" class="form-control">
+                        </div>
                     <div class="form-group text-center">
                         <button type="submit" class="btn btn-primary" style="padding:8px 100px;margin-top:25px;">
                             Añadir película
